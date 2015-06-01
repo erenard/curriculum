@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+<div ng-repeat="experience in experiences">
+  <h3>{{experience.title}}</h3>
+  <h4>{{experience.company}}<a ng-href="{{experience.url}}"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></h4>
+  <h5>{{experience.from}} - {{experience.to}}</h5>
+  <p>{{experience.description}}</p>
+  <span ng-repeat="technology in experience.technologies" class="label label-primary">{{technology}}</span>
+</div>
